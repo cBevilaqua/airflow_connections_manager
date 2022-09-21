@@ -1,6 +1,6 @@
 [project]
 name = "airflow_connections_manager"
-version = "0.0.4"
+version = "0.0.5"
 authors = [
   { name="Cristiano Sarmento", email="cristiano.sar@gmail.com" },
 ]
