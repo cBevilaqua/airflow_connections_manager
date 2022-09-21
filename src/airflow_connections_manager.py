@@ -1,4 +1,4 @@
-from api_client import AirflowApiClient
+from airflow_api_client import AirflowApiClient
 
 
 class AirflowConnectionsManager:
@@ -9,10 +9,10 @@ class AirflowConnectionsManager:
         conns = None
         try:
             conns = AirflowConnectionsManager.api_client.list_connections()
-            conns = conns.json()
         except Exception as error:
             return error
 
+        conns = conns.json()
         output = []
         connections = conns["connections"]
 
