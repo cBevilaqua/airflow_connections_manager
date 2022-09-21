@@ -10,7 +10,7 @@ license = { file="LICENSE" }
 requires-python = ">=3.6"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: Apache 2.0",
+    "License :: OSI Approved :: Apache Software License v2.0",
     "Operating System :: OS Independent",
 ]
 
