@@ -1,5 +1,5 @@
 [project]
-name = "airflow_connections_manager_cbevilaqua"
+name = "airflow_connections_manager"
 version = "0.0.1"
 authors = [
   { name="Cristiano Sarmento", email="cristiano.sar@gmail.com" },
@@ -10,7 +10,7 @@ license = { file="LICENSE" }
 requires-python = ">=3.6"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License v2.0",
+    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
 
