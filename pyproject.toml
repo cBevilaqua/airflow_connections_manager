@@ -7,6 +7,9 @@ authors = [
 description = "Library for managing Airflow connections (aka Secrets)"
 readme = "README.md"
 license = { file="LICENSE" }
+dependencies = [
+    "requests >= 2.28.1",
+]
 requires-python = ">=3.6"
 classifiers = [
     "Programming Language :: Python :: 3",
