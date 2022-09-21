@@ -15,7 +15,11 @@ class AirflowApiClient:
         if data is not None:
             data = json.dumps(data)
 
-        return requests.request(method, url=f"{self.base_url}/{url}", data=data, headers=headers)
+        resp = requests.request(method, url=f"{self.base_url}/{url}", data=data, headers=headers)
+
+        if resp.status_code != 200:
+            raise Exception(f"Airflow API error with detail: {str(resp.raise_for_status())}")
+        return resp.json()
 
     def list_connections(self):
         return self.do_request("GET", "connections")
