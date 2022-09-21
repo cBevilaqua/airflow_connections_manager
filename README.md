@@ -12,7 +12,7 @@ AIRFLOW_API_TOKEN=<your Airflow Basic Auth token like Basic YXRtaW46YHRt8W4=>
 
 Sample
 ```
-from connections_manager import AirflowConnectionsManager
+from airflow_connections_manager import AirflowConnectionsManager
 
 connections = AirflowConnectionsManager.list_connections()
 ```
